@@ -1,0 +1,32 @@
+using System;
+
+namespace estruturas_condicionais
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite sua Idade");
+            int idade = int.Parse(Console.ReadLine());
+
+            if (idade >= 0 && idade <= 11) {
+
+                Console.WriteLine("voce é uma criança");
+            } else if (idade >= 12 && idade <= 18)
+            {
+                Console.WriteLine("Você é um Adolescente!");
+            }else if (idade >= 19 && idade <= 60) {
+                Console.WriteLine("Você é um Adulto!");
+
+            }
+            else
+            {
+                Console.WriteLine("Você é um Idoso");
+            }
+
+
+
+            Console.ReadLine();
+        }
+    }
+}
